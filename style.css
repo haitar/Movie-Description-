@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap');
+
+:root {
+  --primary-first: #1e293b;
+  --primary-second: #8e44ad;
+  --secondary-text: rgb(229 227 227 / 63%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+}
+
+#first-color {
+  background-color: black;
+  height: 50%;
+}
+#seconde-color {
+  background-color: var(--primary-second);
+  height: 50%;
+}
+
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-first);
+  width: 90vw;
+  max-width: 37.5em;
+  padding: 3em 1.8em;
+  border-radius: 0.6em;
+  box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0, 2);
+}
+
+#search-container {
+  margin-bottom: 1em;
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  gap: 1.5em;
+}
+
+#input-search {
+  padding: 0.5em 1em;
+  /* width: 75%; */
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.645);
+  outline: none;
+  border-radius: 0.5em;
+  font-size: 0.9em;
+}
+#input-search:focus {
+  border-color: #ffffff;
+}
+#search {
+  /* width: 20%; */
+  padding: 0.9em 1.9em;
+  border-radius: 0.5em;
+  background-color: var(--primary-second);
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+/* movie info ---------------------- */
+#movie-info {
+  display: flex;
+}
+
+.poster img {
+  width: 120px;
+  border-radius: 0.5em;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7em;
+}
+
+.name {
+  color: #ffffff;
+  font-size: 1.5em;
+}
+
+#ratings {
+  display: flex;
+  gap: 0.5em;
+  align-items: flex-end;
+}
+
+#ratings img {
+  width: 26px;
+}
+
+#ratings h3 {
+  color: white;
+}
+
+#release-info {
+  margin-top: 0.2em;
+  display: flex;
+  gap: 1em;
+  color: var(--secondary-text);
+}
+
+#categories {
+  color: white;
+  display: flex;
+  gap: 2em;
+  margin-top: 1em;
+}
+
+.type {
+  border: 1px solid rgba(255, 255, 255, 0.535);
+  padding: 0.3em 0.5em;
+  border-radius: 0.2em;
+}
+
+.plot {
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+.description {
+  color: var(--secondary-text);
+  font-style: italic;
+  line-height: 1.2em;
+  margin-bottom: 1em;
+}
+
+.cast {
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+.actors {
+  color: var(--secondary-text);
+  font-style: italic;
+  line-height: 1.2em;
+  margin-bottom: 1em;
+}
+
+.erreur-message {
+  display: none;
+}
+.err {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}

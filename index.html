@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="/script.js" defer></script>
+    <title>Movie Guide App</title>
+  </head>
+  <body>
+    <!-- background --------------------- -->
+    <div id="first-color"></div>
+    <div id="seconde-color"></div>
+    <!-- container ======================= -->
+    <div id="container" class="container">
+      <!-- search field ---------------- -->
+      <form id="search-container">
+        <input
+          type="text"
+          placeholder="Please insert your movie name .."
+          id="input-search"
+          autocomplete="off"
+          value="Joker"
+        />
+        <button id="search">Search</button>
+      </form>
+      <div class="results"></div>
+
+      <div class="erreur-message">
+        <p class="err">Movie not found!</p>
+      </div>
+      <!-- movie info ------------------->
+      <!-- <div id="movie-info">
+        <div class="poster">
+          <img src="./20230228_120529.jpg" alt="Poster" />
+        </div>
+        <div class="info">
+          <div id="name">
+            <h2 class="name">Joker</h2>
+          </div>
+          <div id="ratings">
+            <img src="./icons8-star-filled-48.png" alt="star" />
+            <h3 class="rating">8.4</h3>
+          </div>
+          <div id="release-info">
+            <p class="adults">R</p>
+            <p class="release">2019</p>
+            <p class="timing">122min</p>
+          </div>
+          <div id="categories">
+            <div class="type">Crime</div>
+            <div class="type">Drama</div>
+            <div class="type">Thriller</div>
+          </div>
+        </div>
+      </div> -->
+      <!-- description -->
+      <!-- <div id="description">
+        <h3 class="plot">Plot:</h3>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam culpa
+          perferendis explicabo dignissimos, porro modi laborum reiciendis
+          soluta at pariatur eveniet voluptatem possimus? Tempore, facere fugiat
+          quam provident assumenda magni.
+        </p>
+        <h3 class="cast">Cast:</h3>
+        <p class="actors">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum
+          eligendi ducimus delectus placeat
+        </p>
+      </div> -->
+    </div>
+
+    <template class="template">
+      <div id="movie-info">
+        <div class="poster">
+          <img class="img-poster" src="" alt="Poster" />
+        </div>
+        <div class="info">
+          <div id="name">
+            <h2 class="name"></h2>
+          </div>
+          <div id="ratings">
+            <img src="./icons8-star-filled-48.png" alt="star" />
+            <h3 class="rating"></h3>
+          </div>
+          <div id="release-info">
+            <p class="adults"></p>
+            <p class="release"></p>
+            <p class="timing"></p>
+          </div>
+          <div id="categories" class="categories"></div>
+        </div>
+      </div>
+      <div id="description">
+        <h3 class="plot">Plot:</h3>
+        <p class="description"></p>
+        <h3 class="cast">Cast:</h3>
+        <p class="actors"></p>
+      </div>
+    </template>
+  </body>
+</html>

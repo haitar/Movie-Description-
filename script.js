@@ -13,7 +13,7 @@ function getMovie(e) {
   e.preventDefault();
   results.innerHTML = '';
   const movieName = document.getElementById('input-search').value;
-  const url = `http://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
+  const url = `https://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
 
   if (movieName.length <= 0) {
     notFound();
